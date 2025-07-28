@@ -4,6 +4,7 @@ import {
     FaTimes,
     FaArrowRight
 } from "react-icons/fa";
+import { Link } from "react-router-dom";
 
 const Hero = () => {
     const [menuOpen, setMenuOpen] = useState(false);
@@ -15,8 +16,16 @@ const Hero = () => {
                     <img src="/LOGO.png" alt="Logo" className="h-10 w-auto" />
                 </div>
                 <div className="hidden md:flex gap-6 font-medium">
-                    <a href="#" className="hover:text-yellow-300">Home</a>
-                    <a href="#" className="hover:text-yellow-300">About</a>
+                    <Link to='/'>
+                        <a className="hover:text-yellow-300">
+                            Home
+                        </a>
+                    </Link>
+                    <Link to='/about'>
+                        <a className="hover:text-yellow-300">
+                            About Us
+                        </a>
+                    </Link>
                     <a href="#" className="hover:text-yellow-300">Services</a>
                     <a href="#" className="hover:text-yellow-300">Blog</a>
                     <a href="#" className="hover:text-yellow-300">Contact Us</a>
@@ -69,7 +78,7 @@ const Hero = () => {
                 <div className="flex gap-4 w-full max-w-2xl mx-auto">
                     {/* Left Side */}
                     <div className="flex flex-col gap-4 w-1/2">
-                        <img src="/image1.jpg" alt="Curly Hair" className="w-full h-48 md:h-52 lg:h-56 rounded-tl-4xl object-cover"/>
+                        <img src="/image1.jpg" alt="Curly Hair" className="w-full h-48 md:h-52 lg:h-56 rounded-tl-4xl object-cover" />
                         <img src="/image3.jpg" className="rounded-bl-4xl object-cover w-full h-48 sm:h-44 md:h-52 lg:h-56" alt="hairdresser at work" />
                     </div>
                     {/* Right Side */}
