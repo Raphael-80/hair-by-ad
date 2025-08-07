@@ -48,12 +48,14 @@ const Hero = () => {
             {/* Mobile Menu */}
             {menuOpen && (
                 <div className="md:hidden flex flex-col gap-6 mb-8 bg-[#421625] p-6 rounded-lg animate-fade-in-down">
-                    <a href="#" className="hover:text-yellow-300 text-center">
+                    <Link href="#" className="hover:text-yellow-300 text-center">
                         Home
-                    </a>
-                    <a href="#" className="hover:text-yellow-300 text-center">
-                        About Us
-                    </a>
+                    </Link>
+                    <Link className="hover:text-yellow-300 text-center" to="/about">
+                        <a>
+                            About Us
+                        </a>
+                    </Link>
                     <a href="#" className="hover:text-yellow-300 text-center">
                         Services
                     </a>
