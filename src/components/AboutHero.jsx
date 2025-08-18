@@ -16,10 +16,11 @@ const Hero = () => {
             <div className="absolute inset-0 bg-black/50 z-10"></div>
             <header className="absolute top-0 left-0 w-full z-20 p-4 md:p-6">
                 <div className="flex justify-between items-center mb-6 text-white">
-                    <div className="flex items-center gap-2">
+                   <Link to="/">
+ <div className="flex items-center gap-2">
                         <img src="/LOGO.png" alt="Logo" className="h-10 w-auto" />
                     </div>
-
+                    </Link>
                     {/* Desktop Menu */}
                     <div className="hidden md:flex gap-6 font-medium">
                         <Link to="/">
@@ -28,7 +29,9 @@ const Hero = () => {
                         <Link to="/about">
                             <a className="hover:text-yellow-300">About Us</a>
                         </Link>
-                        <a href="#" className="hover:text-yellow-300">Services</a>
+                        <Link to="/services">
+                            <a className="hover:text-yellow-300">Services</a>
+                        </Link>
                         <a href="#" className="hover:text-yellow-300">Blog</a>
                         <a href="#" className="hover:text-yellow-300">Contact Us</a>
                     </div>

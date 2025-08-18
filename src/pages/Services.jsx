@@ -1,17 +1,16 @@
 import React, { useState } from "react";
-import {
-    FaBars,
-    FaTimes,
-    FaArrowRight
-} from "react-icons/fa";
-import { Link } from "react-router-dom";
+import { FaBars, FaTimes, FaArrowRight } from 'react-icons/fa';
+import Footer from "../components/Footer";
+import SocialSection from "../components/SocialSection";
+import { Link } from 'react-router-dom'
+import { services } from '../data/services'; // Assuming you have a services data file
 
-const Hero = () => {
+const Services = () => {
     const [menuOpen, setMenuOpen] = useState(false);
 
     return (
-        <div className="bg-[linear-gradient(200deg,_#800020,_#b76e79)] text-white px-6 md:px-10 py-8">
-            <div className="flex justify-between items-center mb-10">
+        <div>
+            <nav className="flex justify-between items-center px-6 py-4 shadow-md bg-white sticky top-0 z-50">
                 <Link to="/">
                     <div className="flex items-center gap-2">
                         <img src="/LOGO.png" alt="Logo" className="h-10 w-auto" />
@@ -28,7 +27,7 @@ const Hero = () => {
                             About Us
                         </a>
                     </Link>
-                    <Link to='/services'>
+                    <Link to="/services">
                         <a className="hover:text-yellow-300">Services</a>
                     </Link>
                     <a href="#" className="hover:text-yellow-300">Blog</a>
@@ -47,11 +46,10 @@ const Hero = () => {
                         />
                     )}
                 </div>
-            </div>
+            </nav>
 
-            {/* Mobile Menu */}
             {menuOpen && (
-                <div className="md:hidden flex flex-col gap-6 mb-8 bg-[#421625] p-6 rounded-lg animate-fade-in-down">
+                <div className="md:hidden flex flex-col gap-6 mb-8 bg-[#421625] text-white font-medium p-6 rounded-lg animate-fade-in-down">
                     <Link href="#" className="hover:text-yellow-300 text-center">
                         Home
                     </Link>
@@ -72,31 +70,32 @@ const Hero = () => {
                 </div>
             )}
 
-            {/* Hero Content */}
-            <div className="grid md:grid-cols-2 gap-10 items-center">
-                <div>
-                    <h1 className="text-4xl md:text-5xl font-bold leading-snug">WHERE BEAUTY BECOMES <br /> ART AND LUXURY</h1>
-                    <p className="mt-4 text-lg text-gray-200">Enter a sanctuary of elegance, where every <br /> detail is crafted to elevate your natural allure.</p>
-                    <Link to="/book-session">
-                        <button className="mt-6 bg-yellow-400 text-white font-semibold px-6 py-2 rounded hover:bg-yellow-300">Book Now</button>
-                    </Link>
-                </div>
-
-                {/* Image Section */}
-                <div className="flex gap-4 w-full max-w-2xl mx-auto">
-                    {/* Left Side */}
-                    <div className="flex flex-col gap-4 w-1/2">
-                        <img src="/image1.jpg" alt="Curly Hair" className="w-full h-48 md:h-52 lg:h-56 rounded-tl-4xl object-cover" />
-                        <img src="/image3.jpg" className="rounded-bl-4xl object-cover w-full h-48 sm:h-44 md:h-52 lg:h-56" alt="hairdresser at work" />
-                    </div>
-                    {/* Right Side */}
-                    <div className="w-1/2">
-                        <img src="/image2.jpg" className="w-full h-full max-h-[432px] md:max-h-[440px] lg:max-h-[460px] rounded-tr-4xl rounded-br-4xl object-cover" alt="salon setup" />
-                    </div>
+            <div className="px-6 py-12 bg-white min-h-screen">
+                <h2 className="text-3xl font-bold text-center mb-10 text-gray-800">Our Services</h2>
+                <div className="grid md:grid-cols-3 sm:grid-cols-2 gap-8">
+                    {services.map((service, index) => (
+                        <div className="bg-white shadow-md rounded-xl p-4 hover:shadow-xl transition duration-300 border border-gray-100 hover:scale-105" key={index}>
+                            <img
+                                src={service.image}
+                                alt={service.title}
+                                className="w-full h-60 object-cover rounded-md mb-4"
+                            />
+                            <h3 className="text-xl font-semibold text-gray-700 mb-2">{service.title}</h3>
+                            <p className="text-gray-500 text-sm mb-3">{service.description}</p>
+                            {/* <p className="font-semibold text-pink-600 mb-4">₦{service.price}</p> */}
+                            <Link
+                                to="/book-session"
+                                className="inline-block bg-[#800020] text-white px-4 py-2 rounded hover:bg-[#800020] transition"
+                            >
+                                Book Now
+                            </Link>
+                        </div>
+                    ))}
                 </div>
             </div>
+
         </div>
     )
 }
 
-export default Hero
+export default Services

@@ -1,5 +1,6 @@
 import React from 'react'
 import { FaArrowRight } from "react-icons/fa";
+import { Link } from 'react-router-dom';
 
 const CTA = () => {
     return (
@@ -19,9 +20,11 @@ const CTA = () => {
                         today and let our expert stylists deliver a standard that exceeds
                         expectations because you deserve nothing but the best.
                     </p>
-                    <button className="bg-yellow-400 text-white font-semibold px-6 py-2 rounded hover:bg-yellow-300 flex items-center gap-2">
-                        Book Now <FaArrowRight />
-                    </button>
+                    <Link to="/book-session">
+                        <button className="bg-yellow-400 text-white font-semibold px-6 py-2 rounded hover:bg-yellow-300 flex items-center gap-2">
+                            Book Now <FaArrowRight />
+                        </button>
+                    </Link>
                 </div>
             </div>
         </div>
