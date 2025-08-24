@@ -53,4 +53,16 @@ export const services = [
         image: "hair-wash.jpg",
         price: 3000
     },
+    {
+        title: "Manicure & Pedicure",
+        description: "Pamper your hands and feet with our luxurious manicure and pedicure services.",
+        image: "/nails-2.jpg",
+        price: 4000
+    },
+    {
+        title: "Skin Treatment",
+        description: "Rejuvenate your skin with our specialized treatments for a radiant, healthy glow.",
+        image: "/derm-1.jpg",
+        price: 6000
+    }
 ];

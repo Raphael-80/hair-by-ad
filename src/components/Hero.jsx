@@ -31,8 +31,12 @@ const Hero = () => {
                     <Link to='/services'>
                         <a className="hover:text-yellow-300">Services</a>
                     </Link>
-                    <a href="#" className="hover:text-yellow-300">Blog</a>
-                    <a href="#" className="hover:text-yellow-300">Contact Us</a>
+                    <Link to='/blog'>
+                        <a className="hover:text-yellow-300">Blog</a>
+                    </Link>
+                    <Link to='/contact'>
+                        <a className="hover:text-yellow-300">Contact</a>
+                    </Link>
                 </div>
                 <div className="md:hidden">
                     {menuOpen ? (
@@ -60,15 +64,21 @@ const Hero = () => {
                             About Us
                         </a>
                     </Link>
-                    <a href="#" className="hover:text-yellow-300 text-center">
-                        Services
-                    </a>
-                    <a href="#" className="hover:text-yellow-300 text-center">
-                        Blog
-                    </a>
-                    <a href="#" className="hover:text-yellow-300 text-center">
-                        Contact Us
-                    </a>
+                    <Link to="/services" className="hover:text-yellow-300 text-center">
+                        <a>
+                            Services
+                        </a>
+                    </Link>
+                    <Link to="/blog" className="hover:text-yellow-300 text-center">
+                        <a>
+                            Blog
+                        </a>
+                    </Link>
+                    <Link to="/contact" className="hover:text-yellow-300 text-center">
+                        <a>
+                            Contact
+                        </a>
+                    </Link>
                 </div>
             )}
 

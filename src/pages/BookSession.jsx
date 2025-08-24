@@ -56,8 +56,12 @@ const BookSession = () => {
                     <Link to="/services">
                         <a className="hover:text-yellow-300">Services</a>
                     </Link>
-                    <a href="#" className="hover:text-yellow-300">Blog</a>
-                    <a href="#" className="hover:text-yellow-300">Contact Us</a>
+                    <Link to="/blog">
+                        <a className="hover:text-yellow-300">Blog</a>
+                    </Link>
+                    <Link to="/contact">
+                        <a className="hover:text-yellow-300">Contact Us</a>
+                    </Link>
                 </div>
                 <div className="md:hidden">
                     {menuOpen ? (
@@ -76,7 +80,7 @@ const BookSession = () => {
 
             {menuOpen && (
                 <div className="md:hidden flex flex-col gap-6 mb-8 bg-[#421625] text-white font-medium p-6 rounded-lg animate-fade-in-down">
-                    <Link href="#" className="hover:text-yellow-300 text-center">
+                    <Link to="/" className="hover:text-yellow-300 text-center">
                         Home
                     </Link>
                     <Link className="hover:text-yellow-300 text-center" to="/about">
@@ -84,15 +88,21 @@ const BookSession = () => {
                             About Us
                         </a>
                     </Link>
-                    <a href="#" className="hover:text-yellow-300 text-center">
-                        Services
-                    </a>
-                    <a href="#" className="hover:text-yellow-300 text-center">
-                        Blog
-                    </a>
-                    <a href="#" className="hover:text-yellow-300 text-center">
+                    <Link to="/services" className="hover:text-yellow-300 text-center">
+                        <a>
+                            Services
+                        </a>
+                    </Link>
+                    <Link to="/blog" className="hover:text-yellow-300 text-center">
+                        <a>
+                            Blog
+                        </a>
+                    </Link>
+                    <Link to="/contact" className="hover:text-yellow-300 text-center">
+                    <a>
                         Contact Us
                     </a>
+                    </Link>
                 </div>
             )}
 

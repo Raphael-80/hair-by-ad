@@ -1,0 +1,72 @@
+[
+    {
+        "id": 1,
+        "title": "10 Tips for Healthy Skin",
+        "date" : "March 20, 2025",
+        "author": "Mary Jane",
+        "image": "/face_1.jpg"
+    },
+    {
+        "id": 2,
+        "title": "Top 5 Trending Hairstyles",
+        "date":"March 15, 2025",
+        "author":"Mary Jane",
+        "image":"/IG_4.jpg"
+    },
+        {
+        "id": 3,
+        "title": "Nail Care Routine for Stronger",
+        "date" : "March 10, 2025",
+        "author": "Mary Jane",
+        "image": "/nails.jpg"
+    },
+    {
+        "id": 4,
+        "title": "Top 5 Trending Hairstyles",
+        "date":"March 15, 2025",
+        "author":"Mary Jane",
+        "image":"/IG_5.jpg"
+    },
+    {
+        "id": 5,
+        "title": "10 Everyday Skincare Mistakes You Didn't Know You Were Making",
+        "date":"June 14, 2025",
+        "author": "John Doe",
+        "image": "/skin-1.jpg"
+    },
+    {
+        "id": 6,
+        "title": "The Ultimate Guide to Choosing the Right Foundation for Your Skin Tone.",
+        "date":"June 28, 2025",
+        "author": "John Doe",
+        "image": "/foundation.jpg"
+    },
+    {
+        "id": 7,
+        "title": "Natural Beauty Hacks:DIY Masks and Treatments You Can Try at Home.",
+        "date":"April 14, 2025",
+        "author": "John Doe",
+        "image": "/mask-2.jpg"
+    },
+    {
+        "id": 8,
+        "title": "Top 5 Beauty Trends in 2025 You Need to Try",
+        "date":"July 21, 2025",
+        "author": "John Doe",
+        "image": "/IG_2.jpg"
+    },
+    {
+        "id": 9,
+        "title": "The Science Behind Glowing Skin: Dermatologist-Approved Tips.",
+        "date":"August 10, 2025",
+        "author": "John Doe",
+        "image": "/derm-2.jpg"
+    },
+    {
+        "id": 10,
+        "title": "Haircare 101: How to Repair and Prevent Damaged Hair.",
+        "date":"June 14, 2025",
+        "author": "John Doe",
+        "image": "/hair-wash.jpg"
+    }
+]
