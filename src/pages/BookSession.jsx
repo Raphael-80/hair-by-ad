@@ -152,6 +152,8 @@ const BookSession = () => {
                                 <option value="Scalp Massage">Scalp Massage</option>
                                 <option value="Hair Cutting">Hair Cutting</option>
                                 <option value="Hair Washing">Hair Washing</option>
+                                <option value="Manicure & Pedicure">Manicure & Pedicure</option>
+                                <option value="Skin Treatment">Skin Treatment</option>
                             </select>
 
                             <div>
